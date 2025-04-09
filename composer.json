@@ -58,7 +58,5 @@
     "post-autoload-dump": [
           "@php artisan vendor:publish --tag=laravel-time-logger --force"
       ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
