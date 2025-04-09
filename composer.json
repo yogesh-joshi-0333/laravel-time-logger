@@ -1,0 +1,64 @@
+{
+  "name": "yogeshjoshi/laravel-time-logger",
+  "version": "1.0.0",
+  "description": "Laravel Time Logger is a lightweight and developer-friendly profiling utility for Laravel. It helps measure and log code execution time effortlessly, making performance debugging simple and efficient.",
+  "keywords": [
+    "laravel",
+    "timer",
+    "profiling",
+    "performance",
+    "debugging",
+    "scoped",
+    "time logger"
+  ],
+  "authors": [
+    {
+      "name": "Yogesh Joshi",
+      "email": "joshiyogesh0333@gmail.com"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LaravelTimeLogger\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LaravelTimeLogger\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelTimeLogger\\LaravelTimeLoggerServiceProvider"
+      ],
+      "aliases": {
+        "LaravelTimeLogger": "LaravelTimeLogger\\Facades\\LaravelTimeLogger"
+      }
+    }
+  },
+  "require": {
+  "php": ">=8.0",
+  "laravel/framework": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=9.0"
+  },
+  "support": {
+    "email": "joshiyogesh0333@gmail.com",
+    "issues": "https://github.com/yogeshjoshi/laravel-time-logger/issues",
+    "source": "https://github.com/yogeshjoshi/laravel-time-logger"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+          "@php artisan vendor:publish --tag=laravel-time-logger --force"
+      ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
