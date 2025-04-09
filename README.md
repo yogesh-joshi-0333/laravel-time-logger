@@ -33,7 +33,7 @@ $timer->stop();
 
 ## Publishing Config
 ```bash
-php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=laravel-time-logger
 ```
 
 ## Config Options
