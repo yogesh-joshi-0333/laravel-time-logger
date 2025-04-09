@@ -4,7 +4,7 @@ A lightweight Laravel package that helps profile code execution time using RAII-
 
 ## Installation
 ```bash
-composer require yogesh-joshi-0333/laravel-time-logger
+composer require yogeshjoshi/laravel-time-logger
 ```
 
 ## Usage
