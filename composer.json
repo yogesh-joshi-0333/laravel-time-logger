@@ -59,6 +59,6 @@
           "@php artisan vendor:publish --tag=laravel-time-logger --force"
       ]
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
